@@ -73,8 +73,8 @@ During the exploration phase, the following key patterns and observations were m
 
 ### Data Cleaning
 The dataset was cleaned to ensure that it was ready for modeling. This included:
-- **Handling Missing Values**: Columns with missing values, such as `engine_size` and `mileage`, were either imputed with the mean/median or dropped if they had too many missing entries.
-- **Outlier Detection**: Extreme outliers in `mileage` and `price` were identified and treated to avoid skewing the model.
+- **Handling Missing Values**: Columns with missing values, such as `Acceleration`,`Rear_Brake_Type`,`Front_Brake_Type`, `Steering_Type`, `Drive_Type` and `No_Of_Owners`, were either imputed with the mean/median or mode 
+- **Outlier Detection**: Extreme outliers in `Gear_Box`, `No_Of_Owner`, `Engine_Displacement`,`Max_Power`, `Seats`, `Price`, `Mileage`, `KMS_Driven` and a few in `Make_Year` and `Acceleration` and  were identified and handled. We did not handle `Price` since outliers might indicate high luxury cars.
 
 ### Exploratory Data Analysis (EDA)
 Exploratory Data Analysis was performed to identify trends, correlations, and patterns within the data:
@@ -83,8 +83,6 @@ Exploratory Data Analysis was performed to identify trends, correlations, and pa
 
 ### Feature Engineering
 New features were created to better capture the relationship between car attributes and the target variable:
-- **Car Age**: A new feature representing the car's age, calculated as the difference between the current year and the car's manufacturing year.
-- **Price per Mile**: Calculated by dividing the `price` by `mileage`, helping to assess the price-to-condition ratio.
 
 ### Correlation Analysis
 Correlation analysis was performed to identify multicollinearity and the most important features that influence price:
@@ -92,27 +90,50 @@ Correlation analysis was performed to identify multicollinearity and the most im
 - `Condition` was another significant categorical feature that influences price, especially for cars in good or excellent condition.
 
 ### Feature Scaling
-To ensure all features are on the same scale, numerical features such as `mileage`, `engine_size`, and `horsepower` were standardized using `StandardScaler` from scikit-learn.
+To ensure all features are on the same scale, numerical features  were standardized using `StandardScaler` from scikit-learn.
 
 ### Feature Selection
 Feature selection was carried out to retain only the most relevant features:
 - **SelectKBest**: Statistical tests were applied to select the most influential features for the model. This ensured that the model was not overfitted by irrelevant features.
-
+  
 ---
 
 ## 4. Modeling
 
 ### Regression and Ensemble Techniques
 
-Two types of models were implemented to predict the car prices:
+Different types of models were implemented to predict the car prices:
 
 - **Linear Regression**: 
   - The linear regression model was implemented as a baseline to understand the linear relationships between features and car prices. 
-  - Although this model provided a general understanding of car pricing, it struggled with complex, non-linear relationships.
+  - Linear Regression Evaluation Results:
+    Mean Squared Error (MSE): 249462455102.7223
+    Root Mean Squared Error (RMSE): 499462.1658371356
+    R-squared: 0.6407968427069457 explaining 64.1% variability in car prices by the predictors. This is a decent result but shows room for improvement.
+    Mean Absolute Error (MAE): 262972.3722601558
+- **Decision Trees**:
+  - Decision Tree Regressor Evaluation Results:
+    Mean Squared Error (MSE): 174933708732.1922
+    Root Mean Squared Error (RMSE): 418250.7725422539
+    R-squared: 0.7481114323688011, explaining 74.8% variability in car prices by the predictors
+    Mean Absolute Error (MAE): 160572.32644790708
 
 - **Random Forest Regressor**:
   - An ensemble learning model was used to improve predictions. The Random Forest model performed better than linear regression by capturing non-linear patterns and interactions between multiple features.
   - Hyperparameter tuning was conducted to optimize the model’s performance.
+  - Random Forest Regressor Evaluation Results:
+    Mean Squared Error (MSE): 128568690257.09554
+    Root Mean Squared Error (RMSE): 358564.76438308257
+    R-squared: 0.8148728254503678, explaining 81.4% variability in car prices by the predictors
+    Mean Absolute Error (MAE): 137983.14488881442
+
+- **Gradient Boosting Regressor**:
+  - Gradient Boosting Regressor Evaluation Results
+    Mean Squared Error (MSE): 128268327432.82712
+    Root Mean Squared Error (RMSE): 358145.6790648564
+    R-squared: 0.8153053204916205, xplaining 81.5% variability in car prices by the predictors
+    Mean Absolute Error (MAE): 140197.4860353186
+
 
 ---
 
@@ -124,11 +145,11 @@ To assess the performance of the models, the following metrics were used:
 - **Mean Squared Error (MSE)**: Penalizes larger errors and provides a sense of model performance.
 - **R-squared**: Indicates how well the model fits the data.
 
-The **Random Forest Regressor** outperformed **Linear Regression** with a lower MAE, MSE, and a higher R-squared value.
+The **Gradient Boosting Regressor** and **Random Forest Regressor** outperformed **Decision Trees** but **Linear Regression** was the weakest model with a lower MAE, MSE, and R-squared value.
 
 ### Recommendations
 Based on the findings from the model evaluation:
-- **Dynamic Pricing Model**: Businesses can use the Random Forest model to set real-time dynamic prices, adjusting for features like mileage, age, and condition.
+- **Dynamic Pricing Model**: Businesses can use the Gradient Boosting model to set real-time dynamic prices, adjusting for features like mileage, age, and condition.
 - **Price Optimization**: The model can be used to recommend price adjustments, ensuring that cars are priced competitively in the market while maximizing profits.
 - **Market Insights**: The model can help identify which car features (e.g., brand, engine size, condition) most influence pricing, allowing businesses to better understand market demand.
 
@@ -137,14 +158,14 @@ Based on the findings from the model evaluation:
 ## 6. Model Deployment
 
 ### Deployment Strategy
-The trained Random Forest model can be deployed as a RESTful API for easy integration into business applications such as online car marketplaces or dealership software.
+The trained Random Forest model can be deployed as a web application using Streamlit which provides a user-friendly interface where users can input car details (such as make, model, mileage, etc.) and get an estimated price in real-time. Streamlit is ideal for deploying machine learning models for quick prototypes and demonstrations without the need to build an extensive web framework.
 
 ### Model Deployment Steps
-1. **Convert the model into a serialized format** (e.g., `.pkl`).
-2. **Deploy the model using Flask/Django**: Create an API endpoint where users can input car details (e.g., make, model, mileage) and get an estimated price.
-3. **Monitor the model's performance**: Continuously track the model's prediction accuracy to ensure its reliability in real-time scenarios.
-4. **User Interface**: Develop a simple web interface where users can input car details and receive an instant price prediction.
-
+1. **Convert the model into a serialized format and save it**:('gb_model.joblib').
+2. **Install Streamlit**:Install Streamlit and other dependencies like joblib.
+3. **Build the Streamlit App**: Create a streamlit_app.py file. This file will contain the code to load the Gradient Boosting model and create a user interface for input.
+4. **Run the Streamlit App Locally**: After you’ve written the app, you can run it locally by executing the following command in your terminal: (streamlit run app.py)
+5. **Deploy the Streamlit Application**: After you've tested the app locally and are happy with it, you can deploy it using Streamlit Sharing, Heroku, or AWS.
 ---
 
 ## Installation and Usage
@@ -152,5 +173,4 @@ The trained Random Forest model can be deployed as a RESTful API for easy integr
 ### Clone the Repository
 
 ```bash
-git clone <https://github.com/yourusername/car-valuation.git>
-cd car-valuation
+git clone <https://github.com/FaithMUTIS/Group-2-phase-5-project>

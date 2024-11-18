@@ -53,3 +53,7 @@ Exploratory Data Analysis (EDA): Key insights, trends, and correlations.
 Feature Engineering: Feature selection, scaling, etc.
 Model Development: Algorithms tested and chosen were Lasso, Ridge, Decision Tree Regressor, KNeighbors Regressor, Random Forest Regressor and Gradient Boosting Regressor.
 Evaluation: Metrics used, such as RMSE, MAE, or R².
+
+RESULTS
+
+KNN Regressor proved its capability in generating a good prediction model with a better trade-off between bias and variance error. With hyper parameter tuning using grid search CV, it showed a better accuracy than the standard solution, multiple linear regression. Therefore, KNN Bagging Regressor was chosen as the final model.

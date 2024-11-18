@@ -81,11 +81,17 @@ Mean Absolute Error 137,983.14
 Analysis:  The R-Squared value of 0.815 shows that the model explains about 81.5% of the variance, which is a significant improvement over both Linear Regression and Decision Trees.
 The Random Forest Regressor shows even lower MSE and RSME compared to both Linear Regression and Decision Tree models, suggesting that it has the smallest average prediction error in its predictions.
 
-Conclusion
-From the results, it is evident that the RandomForest Regressor and GradientBoosting Regressor models outperform the other models in terms of R2 score and cross-validation score. Both models achieved an R2 score of approximately 84.49% and cross-validation scores of 75.31% and 73.64%, respectively. However, the errors, particularly the Mean Absolute Error and Root Mean Square Error, are still relatively high, indicating that there is room for improvement in the model's accuracy.
+Gradient Bossting Regressor
+Mean Squared Error (MSE): 128,268,327,433
+Root Mean Squared Error (RSME): 358,145.68
+R-Squared: 0.815
+Mean Absolute Error: 140,197.49
+Analysis:  The R-Squared value of 0.815 indicates that the model explains about 81.5% of the variance in the target variable, the highest among all models.
+The Gradient Boosting Regressor has very similar MSE and RSME values to the Random Forest model, indicating a similar level of prediction error.
 
-The KNeighbors Regressor also showed a decent performance with an R2 score of 62.89% and a cross-validation score of 59.11%. The Decision Tree Regressor had a lower R2 score of 61.25% but a higher cross-validation score of 52.51% compared to the linear models.
+Conclusion and Comparison
+Gradient Boosting Regressor and Random Forest Regressor are the best performing models.
+Decision Tree also shows strong performance but still slightly less effective than the Random Forest and Gradient Bossting models.
+Linear Regression has the highest MSE, RSME and MAE among all models, indicating its lower predictive performance compared to the others therefore the weakest model.
 
-The linear models, including Linear Regression, Lasso Regression, and Ridge Regression, had similar R2 scores around 61.55% but lower cross-validation scores, indicating that they may not generalize well to unseen data.
-
-Overall, ensemble techniques like RandomForest and GradientBoosting Regressors provide better performance and should be considered for further tuning and optimization to improve model accuracy.
+Recommendation.

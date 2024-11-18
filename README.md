@@ -1,4 +1,36 @@
 # Car Valuation Project
+## Table of Contents
+- [Car Valuation Project](#car-valuation-project)
+  - [Table of Contents](#table-of-contents)
+  - [1. Business Understanding](#1-business-understanding)
+    - [Project Overview](#project-overview)
+    - [Business Problem](#business-problem)
+    - [Objectives](#objectives)
+    - [Stakeholders](#stakeholders)
+  - [2. Data Understanding](#2-data-understanding)
+    - [Data Overview](#data-overview)
+    - [Sources and Collection](#sources-and-collection)
+    - [Data Description](#data-description)
+    - [Data Exploration](#data-exploration)
+  - [3. Data Preprocessing](#3-data-preprocessing)
+    - [Data Cleaning](#data-cleaning)
+    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+    - [Feature Engineering](#feature-engineering)
+    - [Correlation Analysis](#correlation-analysis)
+    - [Feature Scaling](#feature-scaling)
+    - [Feature Selection](#feature-selection)
+  - [4. Modeling](#4-modeling)
+    - [Regression and Ensemble Techniques](#regression-and-ensemble-techniques)
+  - [5. Evaluation and Recommendations](#5-evaluation-and-recommendations)
+    - [Evaluation Metrics](#evaluation-metrics)
+    - [Recommendations](#recommendations)
+  - [6. Model Deployment](#6-model-deployment)
+    - [Deployment Strategy](#deployment-strategy)
+    - [Model Deployment Steps](#model-deployment-steps)
+  - [Installation and Usage](#installation-and-usage)
+    - [Clone the Repository](#clone-the-repository)
+
+---
 
 ## 1. Business Understanding
 

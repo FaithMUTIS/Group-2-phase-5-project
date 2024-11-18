@@ -9,9 +9,9 @@ model = joblib.load('gb_model.joblib')
 st.title("Car Valuation Prediction App")
 st.write("Enter the car details to predict the car's valuation.")
 
-# Collect inputs for each feature used in the model (based on your final feature set)
-make_year = st.number_input('Make Year', min_value=1980, max_value=2023, step=1)
-kms_driven = st.number_input('Kilometers Driven', min_value=0, max_value=1000000, step=1000)
+# Collect inputs for each feature used in the model
+make_year = st.number_input('Make Year', min_value=1995, max_value=2024, step=1)
+mileage = st.number_input('Kilometers Driven', min_value=0, max_value=1000000, step=1000)
 engine_displacement = st.number_input('Engine Displacement (cc)', min_value=500, max_value=5000, step=10)
 max_power = st.number_input('Max Power (bhp)', min_value=30, max_value=500, step=1)
 torque = st.number_input('Torque (Nm)', min_value=50, max_value=1000, step=10)
@@ -40,7 +40,7 @@ drive_type_values = {'AWD': [1, 0, 0], 'FWD': [0, 1, 0], 'RWD': [0, 0, 1]}
 
 # Prepare the input data for prediction
 input_data = [
-    make_year, kms_driven, engine_displacement, max_power, torque, gear_box, acceleration,
+    make_year, mileage, engine_displacement, max_power, torque, gear_box, acceleration,
     *brand_features[brand], fuel_type_value, transmission_value, *drive_type_values[drive_type]
 ]
 input_array = np.array(input_data).reshape(1, -1)

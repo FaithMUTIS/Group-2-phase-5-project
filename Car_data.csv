@@ -526,7 +526,7 @@
 524,Toyota Innova 2.5 GX,2010,Diesel,116443,2494,Third ,Manual,12.8,102.0,20.4,8,Silver,5,FWD,Power,Ventilated Disc,Drum,17.5,640000,mumbai
 525,Chevrolet Sail 1.3 Base,2013,Diesel,71880,1248,First ,Manual,22.1,74.0,190.0,5,Silver,5,FWD,Power,Discs,Drum,16.0,335000,mumbai
 526,Maruti A Star AT,2011,Petrol,78700,998,First ,Automatic,16.98,66.1,90.0,5,Silver,4,FWD,Power,Ventilated Disc,Drum,19.0,295000,mumbai
-527,Nissan Micra Diesel XV,2011,Diesel,119445,1461,Second ,Manual,23.08,63.1,160.0,5,Golden,5,2WD,Power,Ventilated Disc,Drum,19.0,259000,mumbai
+527,Nissan Micra Diesel XV,2011,Diesel,119445,1461,Second ,Manual,23.08,63.1,160.0,5,Golden,5,Two Whhel Drive,Power,Ventilated Disc,Drum,19.0,259000,mumbai
 528,Maruti Alto K10 LXI,2011,Petrol,93249,998,Third ,Manual,20.92,67.1,90.0,5,White,5,FWD,Power,Ventilated Disc,Drum,13.3,210000,mumbai
 529,Toyota Fortuner 3.0 Diesel,2011,Diesel,123905,2982,Third ,Manual,11.5,171.0,343.0,7,Grey,5,AWD,Power,Ventilated Disc,Drum,9.6,1230000,mumbai
 530,Maruti Swift Ldi BSIII,2008,Diesel,76720,1248,Second ,Manual,17.8,75.0,190.0,5,Grey,5,FWD,Power,Ventilated Disc,Drum,13.75,331000,mumbai
@@ -651,7 +651,7 @@
 649,Toyota Innova 2.5 GX,2010,Diesel,116443,2494,Third ,Manual,12.8,102.0,20.4,8,Silver,5,FWD,Power,Ventilated Disc,Drum,17.5,640000,bangalore
 650,Chevrolet Sail 1.3 Base,2013,Diesel,71880,1248,First ,Manual,22.1,74.0,190.0,5,Silver,5,FWD,Power,Discs,Drum,16.0,335000,bangalore
 651,Maruti A Star AT,2011,Petrol,78700,998,First ,Automatic,16.98,66.1,90.0,5,Silver,4,FWD,Power,Ventilated Disc,Drum,19.0,295000,bangalore
-652,Nissan Micra Diesel XV,2011,Diesel,119445,1461,Second ,Manual,23.08,63.1,160.0,5,Golden,5,2WD,Power,Ventilated Disc,Drum,19.0,259000,bangalore
+652,Nissan Micra Diesel XV,2011,Diesel,119445,1461,Second ,Manual,23.08,63.1,160.0,5,Golden,5,Two Whhel Drive,Power,Ventilated Disc,Drum,19.0,259000,bangalore
 653,Maruti Alto K10 LXI,2011,Petrol,93249,998,Third ,Manual,20.92,67.1,90.0,5,White,5,FWD,Power,Ventilated Disc,Drum,13.3,210000,bangalore
 654,Toyota Fortuner 3.0 Diesel,2011,Diesel,123905,2982,Third ,Manual,11.5,171.0,343.0,7,Grey,5,AWD,Power,Ventilated Disc,Drum,9.6,1230000,bangalore
 655,Maruti Swift Ldi BSIII,2008,Diesel,76720,1248,Second ,Manual,17.8,75.0,190.0,5,Grey,5,FWD,Power,Ventilated Disc,Drum,13.75,331000,bangalore
@@ -1179,7 +1179,7 @@
 1177,Renault KWID RXL 02,2017,Petrol,24167,799,First ,Manual,25.17,53.3,72.0,5,Red,5,FWD,Power,Discs,Drum,16.0,262000,jaipur
 1178,Maruti Wagon R VXI,2013,Petrol,65000,998,First ,Manual,20.51,67.04,90.0,5,White,5,FWD,Power,Ventilated Disc,Drum,18.6,300000,jaipur
 1179,Maruti Alto K10 LX,2014,Petrol,35000,998,First ,Manual,23.95,67.05,90.0,5,Grey,5,FWD,Manual,Ventilated Disc,Drum,13.3,280000,jaipur
-1180,Nissan Micra Diesel XV,2012,Diesel,71049,1461,First ,Manual,23.08,63.1,160.0,5,Red,5,2WD,Power,Ventilated Disc,Drum,19.0,199000,jaipur
+1180,Nissan Micra Diesel XV,2012,Diesel,71049,1461,First ,Manual,23.08,63.1,160.0,5,Red,5,Two Whhel Drive,Power,Ventilated Disc,Drum,19.0,199000,jaipur
 1181,Datsun RediGO S,2017,Petrol,57577,799,Second ,Manual,22.7,53.64,72.0,5,White,5,2WD,Power,Discs,Drum,19.0,141000,jaipur
 1182,Renault Fluence Diesel E4,2011,Diesel,143072,1461,First ,Manual,21.8,78.0,240.0,5,White,6,2WD,Power,Ventilated Disc,Discs,19.0,254999,jaipur
 1183,Volkswagen Vento Diesel Highline,2013,Diesel,92046,1598,Second ,Manual,20.54,103.6,250.0,5,White,5,FWD,Power,Discs,Drum,19.0,375000,jaipur
@@ -1304,7 +1304,7 @@
 1302,Maruti Wagon R VXI,2013,Petrol,44740,998,First ,Manual,25.44,57.6,150.0,5,Grey,5,FWD,Power,Discs,Drum,19.0,289000,jaipur
 1303,Chevrolet Beat Diesel LS,2012,Diesel,75438,936,First ,Manual,25.44,57.6,150.0,5,Grey,5,FWD,Power,Discs,Drum,19.0,101000,jaipur
 1304,Chevrolet Beat Diesel PS,2013,Diesel,58849,936,Second ,Manual,22.74,47.3,69.0,5,Grey,5,FWD,Power,Solid Disc,Drum,19.0,141000,jaipur
-1305,Maruti Alto 800 LXI,2013,Petrol,68761,796,First ,Manual,23.08,63.1,160.0,5,Black,5,2WD,Power,Ventilated Disc,Drum,19.0,204000,jaipur
+1305,Maruti Alto 800 LXI,2013,Petrol,68761,796,First ,Manual,23.08,63.1,160.0,5,Black,5,Two Whhel Drive,Power,Ventilated Disc,Drum,19.0,204000,jaipur
 1306,Nissan Micra Diesel XV,2011,Diesel,133195,1461,First ,Manual,20.85,83.14,115.0,5,White,5,FWD,Power,Ventilated Disc,Drum,12.6,108000,jaipur
 1307,Maruti Swift Dzire VXI,2015,Petrol,65160,1197,First ,Manual,15.6,70.0,102.0,5,Red,5,FWD,Power,Ventilated Disc,Drum,14.8,463000,jaipur
 1308,Ford Figo Petrol EXI,2011,Petrol,93847,1196,First ,Manual,20.5,103.5,250.0,5,White,5,FWD,Power,Discs,Drum,19.0,112999,jaipur
@@ -1985,7 +1985,7 @@
 1983,Hyundai i10 Sportz 1.1L,2014,Petrol,20000,1086,First ,Manual,19.81,68.05,99.04,5,Red,5,FWD,Power,Ventilated Disc,Drum,14.3,365000,pune
 1984,Toyota Innova 2.5 Z,2013,Diesel,120000,2494,First ,Manual,12.99,100.6,200.0,7,White,5,FWD,Power,Ventilated Disc,Drum,19.0,900000,pune
 1985,Maruti Ritz ZXi,2011,Petrol,117000,1197,Second ,Manual,18.5,85.8,114.0,5,Silver,5,FWD,Power,Ventilated Disc,Drum,15.0,265000,pune
-1986,Nissan Micra Diesel XV,2011,Diesel,91000,1461,First ,Manual,23.08,63.1,160.0,5,White,5,2WD,Power,Ventilated Disc,Drum,19.0,249000,pune
+1986,Nissan Micra Diesel XV,2011,Diesel,91000,1461,First ,Manual,23.08,63.1,160.0,5,White,5,Two Whhel Drive,Power,Ventilated Disc,Drum,19.0,249000,pune
 1987,Mahindra TUV 300 T8,2015,Diesel,69234,1493,Second ,Manual,18.49,100.0,240.0,7,Blue,5,RWD,Power,Discs,Drum,13.9,540000,pune
 1988,Honda City i VTEC,2013,Petrol,84000,1497,First ,Manual,17.8,117.3,145.0,5,Silver,5,FWD,Power,Discs,Drum,10.0,509999,pune
 1989,Maruti Wagon R LXI,2010,Petrol,29000,998,Third ,Manual,18.9,67.1,90.0,5,Maroon,5,FWD,Power,Ventilated Disc,Drum,19.0,275000,pune

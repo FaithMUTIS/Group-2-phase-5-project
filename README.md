@@ -65,7 +65,13 @@ Mean Absolute error (MAE): 262,972.37
 Analysis:  R-Squared is 0.641, which suggests the model explains about 64.1% of the variability in car prices is explained by the predictors. This is a decent result but shows room for improvement. The MSE and RSME are quite large, indicating that the models predictios have a significant deviation from the true values.
 
 DecisionTree Regressor
-
+Mean Squared Error: 174,933,708,732
+Root Mean Squared Error 418,250.77
+R-Squared: 0.748
+Mean Absolute Error: 160,572.33
+Analysis:  The R-Squared value of 0.748 indicates that the model explains about 74.8% of the variance in the target variable, which is an improvement over Linear Regression.
+The RSME and MSE are still large, but much lower than the linear Regression suggesting better prediction accuracy and smaller errors.
+The MAE is much lower than Linear Regression, indicating more accurate predictions on average.
 
 Conclusion
 From the results, it is evident that the RandomForest Regressor and GradientBoosting Regressor models outperform the other models in terms of R2 score and cross-validation score. Both models achieved an R2 score of approximately 84.49% and cross-validation scores of 75.31% and 73.64%, respectively. However, the errors, particularly the Mean Absolute Error and Root Mean Square Error, are still relatively high, indicating that there is room for improvement in the model's accuracy.

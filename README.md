@@ -46,4 +46,10 @@ Jupyter Notebook/Google Colab
 
 APPROACH
 
+We used the following steps;
 
+Data Preprocessing: Cleaning and encoding data, handling missing values.
+Exploratory Data Analysis (EDA): Key insights, trends, and correlations.
+Feature Engineering: Feature selection, scaling, etc.
+Model Development: Algorithms tested and chosen were Lasso, Ridge, Decision Tree Regressor, KNeighbors Regressor, Random Forest Regressor and Gradient Boosting Regressor.
+Evaluation: Metrics used, such as RMSE, MAE, or R².

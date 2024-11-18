@@ -10,3 +10,7 @@ subjective, and inconsistent, leading to inefficiencies and dissatisfaction amon
 stakeholders. This project seeks to streamline the process through technology, improving
 precision and operational efficiency
 
+AIM OF THE PROJECT
+
+To develop a machine-learning-powered system that predicts a car’s market value based on
+its attributes, enhancing pricing accuracy and operational efficiency.

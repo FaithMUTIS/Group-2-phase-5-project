@@ -57,111 +57,15 @@ Evaluation: Metrics used, such as RMSE, MAE, or R².
 RESULTS
 
 Linear Regression
-Cross Validation Scores:
 
-At cross fold 2: 31.75%
+Mean Squared error (MSE):  249,462,455,102.72
+Root Mean Squared Error (RSME): 499,462.17
+R-Squared (R2): 0.641
+Mean Absolute error (MAE): 262,972.37
+Analysis:  R-Squared is 0.641, which suggests the model explains about 64.1% of the variability in car prices is explained by the predictors. This is a decent result but shows room for improvement. The MSE and RSME are quite large, indicating that the models predictios have a significant deviation from the true values.
 
-At cross fold 3: 22.17%
+DecisionTree Regressor
 
-At cross fold 4: 33.19%
-
-At cross fold 5: 32.37%
-
-At cross fold 6: 35.37%
-
-At cross fold 7: 38.98%
-
-At cross fold 8: 31.73%
-
-At cross fold 9: 36.10%
-
-Test Accuracy: 61.55%
-
-Errors:
-
-Mean Absolute Error: 255,396.15
-
-Mean Squared Error: 226,024,833,248.27
-
-Root Mean Square Error: 475,420.69
-
-Lasso Regression
-R2 Score: 61.55%
-
-Cross Validation Score: 38.98%
-
-Errors:
-
-Mean Absolute Error: 255,395.27
-
-Mean Squared Error: 226,024,642,723.29
-
-Root Mean Square Error: 475,420.49
-
-Ridge Regression
-R2 Score: 61.55%
-
-Cross Validation Score: 39.00%
-
-Errors:
-
-Mean Absolute Error: 255,351.13
-
-Mean Squared Error: 226,011,758,603.91
-
-Root Mean Square Error: 475,406.94
-
-Decision Tree Regressor
-R2 Score: 61.25%
-
-Cross Validation Score: 52.51%
-
-Errors:
-
-Mean Absolute Error: 169,328.45
-
-Mean Squared Error: 227,773,198,341.73
-
-Root Mean Square Error: 477,255.90
-
-KNeighbors Regressor
-R2 Score: 62.89%
-
-Cross Validation Score: 59.11%
-
-Errors:
-
-Mean Absolute Error: 208,719.79
-
-Mean Squared Error: 218,155,178,740.23
-
-Root Mean Square Error: 467,070.85
-
-RandomForest Regressor
-R2 Score: 84.49%
-
-Cross Validation Score: 75.31%
-
-Errors:
-
-Mean Absolute Error: 119,682.14
-
-Mean Squared Error: 91,158,903,129.48
-
-Root Mean Square Error: 301,925.33
-
-GradientBoosting Regressor
-R2 Score: 84.49%
-
-Cross Validation Score: 73.64%
-
-Errors:
-
-Mean Absolute Error: 119,682.14
-
-Mean Squared Error: 91,158,903,129.48
-
-Root Mean Square Error: 301,925.33
 
 Conclusion
 From the results, it is evident that the RandomForest Regressor and GradientBoosting Regressor models outperform the other models in terms of R2 score and cross-validation score. Both models achieved an R2 score of approximately 84.49% and cross-validation scores of 75.31% and 73.64%, respectively. However, the errors, particularly the Mean Absolute Error and Root Mean Square Error, are still relatively high, indicating that there is room for improvement in the model's accuracy.

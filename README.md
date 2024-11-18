@@ -73,6 +73,14 @@ Analysis:  The R-Squared value of 0.748 indicates that the model explains about 
 The RSME and MSE are still large, but much lower than the linear Regression suggesting better prediction accuracy and smaller errors.
 The MAE is much lower than Linear Regression, indicating more accurate predictions on average.
 
+RandomForest Regressor
+Mean Squared Error 128,568,690,257
+Root Mean Squared Error 358,564.76
+R-Squared 0.815
+Mean Absolute Error 137,983.14
+Analysis:  The R-Squared value of 0.815 shows that the model explains about 81.5% of the variance, which is a significant improvement over both Linear Regression and Decision Trees.
+The Random Forest Regressor shows even lower MSE and RSME compared to both Linear Regression and Decision Tree models, suggesting that it has the smallest average prediction error in its predictions.
+
 Conclusion
 From the results, it is evident that the RandomForest Regressor and GradientBoosting Regressor models outperform the other models in terms of R2 score and cross-validation score. Both models achieved an R2 score of approximately 84.49% and cross-validation scores of 75.31% and 73.64%, respectively. However, the errors, particularly the Mean Absolute Error and Root Mean Square Error, are still relatively high, indicating that there is room for improvement in the model's accuracy.
 

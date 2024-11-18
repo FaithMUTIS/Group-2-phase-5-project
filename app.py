@@ -18,7 +18,7 @@ torque = st.number_input('Torque (Nm)', min_value=50, max_value=1000, step=10)
 gear_box = st.number_input('Gear Box', min_value=4, max_value=8, step=1)
 acceleration = st.number_input('Acceleration (0-100 km/h in seconds)', min_value=1.0, max_value=20.0, step=0.1)
 
-# Dropdown or radio button for categorical fields (example for brands, fuel type, transmission, etc.)
+# Dropdown or radio button for categorical fields
 brand = st.selectbox('Car Brand', ['BMW 3 Series 320d', 'BMW 6 Series GT', 'Land Rover Range Rover', 
                                    'Mercedes-Benz E-Class Exclusive E', 'Volvo XC 90 Excellence'])
 fuel_type = st.selectbox('Fuel Type', ['Diesel', 'Petrol'])

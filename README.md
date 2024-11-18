@@ -95,3 +95,4 @@ Decision Tree also shows strong performance but still slightly less effective th
 Linear Regression has the highest MSE, RSME and MAE among all models, indicating its lower predictive performance compared to the others therefore the weakest model.
 
 Recommendation.
+Given that the Gradient Boosting Regressor out performs the other models in terms of predictive accuracy, it would be the best choice for our modelling task.

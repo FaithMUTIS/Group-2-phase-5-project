@@ -24,6 +24,7 @@ brand = st.selectbox('Car Brand', ['BMW 3 Series 320d', 'BMW 6 Series GT', 'Land
 fuel_type = st.selectbox('Fuel Type', ['Diesel', 'Petrol'])
 transmission = st.selectbox('Transmission Type', ['Manual', 'Automatic'])
 drive_type = st.selectbox('Drive Type', ['AWD', 'FWD', 'RWD'])
+rear_brake_type = st.selectbox('Rear Brake Type', ['Disc', 'Drum'])
 
 # Convert inputs to a format the model can process (like encoding categorical values)
 brand_features = {
@@ -37,11 +38,13 @@ brand_features = {
 fuel_type_value = 1 if fuel_type == 'Diesel' else 0
 transmission_value = 1 if transmission == 'Manual' else 0
 drive_type_values = {'AWD': [1, 0, 0], 'FWD': [0, 1, 0], 'RWD': [0, 0, 1]}
+rear_brake_type_value = 1 if rear_brake_type == 'Disc' else 0
 
 # Prepare the input data for prediction
 input_data = [
     make_year, mileage, engine_displacement, max_power, torque, gear_box, acceleration,
-    *brand_features[brand], fuel_type_value, transmission_value, *drive_type_values[drive_type]
+    *brand_features[brand], fuel_type_value, transmission_value, *drive_type_values[drive_type], 
+    rear_brake_type_value
 ]
 input_array = np.array(input_data).reshape(1, -1)
 

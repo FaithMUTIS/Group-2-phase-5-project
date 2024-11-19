@@ -11,7 +11,7 @@ st.write("Enter the car details to predict the car's valuation.")
 
 # Collect inputs for each feature used in the model
 make_year = st.number_input('Make Year', min_value=1995, max_value=2024, step=1)
-mileage = st.number_input('Kilometers Driven', min_value=0, max_value=1000000, step=1000)
+mileage = st.number_input('Kilometers Driven', min_value=0, max_value=3000000, step=1000)
 engine_displacement = st.number_input('Engine Displacement (cc)', min_value=500, max_value=5000, step=10)
 max_power = st.number_input('Max Power (bhp)', min_value=30, max_value=500, step=1)
 torque = st.number_input('Torque (Nm)', min_value=50, max_value=1000, step=10)

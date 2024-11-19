@@ -45,6 +45,9 @@ input_data = [
 ]
 input_array = np.array(input_data).reshape(1, -1)
 
+# Check the input data shape (length should be 18)
+st.write(f"Input data shape: {input_array.shape}")
+
 # Make a prediction when the user clicks "Predict"
 if st.button("Predict"):
     prediction = model.predict(input_array)

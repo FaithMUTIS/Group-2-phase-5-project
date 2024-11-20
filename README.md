@@ -206,5 +206,4 @@ The trained Random Forest model can be deployed as a web application using Strea
 ### Clone the Repository
 
 ```bash
-git clone <https://github.com/FaithMUTIS/Group-2-phase-5-project>
->>>>>>> angela-branch
+git clone <https://github.com/FaithMUTIS/Group-2-phase-5-project> 

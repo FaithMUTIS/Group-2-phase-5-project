@@ -201,9 +201,3 @@ The trained Random Forest model can be deployed as a web application using Strea
 5. **Deploy the Streamlit Application**: After you've tested the app locally and are happy with it, you can deploy it using Streamlit Sharing, Heroku, or AWS.
 ---
 
-## Installation and Usage
-
-### Clone the Repository
-
-```bash
-git clone <https://github.com/FaithMUTIS/Group-2-phase-5-project> 
